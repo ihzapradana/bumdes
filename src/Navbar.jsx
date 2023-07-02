@@ -1,19 +1,17 @@
 import React from 'react'
 import logo from "../src/assets/logo.png"
-import { Helmet } from 'react-helmet'
+// import { Helmet } from 'react-helmet'
 
 function Navbar() {
   return (
     <>
-      <Helmet>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
-      </Helmet>
+     
       
-      <nav className="bg-white border-gray-200 dark:bg-[#325A7F] dark:border-gray-700">
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-9">
+      <nav className="bg-white border-gray-200 dark:bg-[#325A7F] dark:border-gray-700 ">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-8">
           <a href="#" className="flex items-center">
-              <img src={logo} className="h-9 mr-3" alt="logo" />
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">PEMERINTAH KABUPATEN JEMBER</span>
+              <img src="../src/assets/logo.svg" className="h-10 mr-3 " alt="logo" />
+              <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">PEMERINTAH KABUPATEN JEMBER</span>
           </a>
           <button data-collapse-toggle="navbar-multi-level" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-multi-level" aria-expanded="false">
             <span className="sr-only">Open main menu</span>
@@ -25,7 +23,7 @@ function Navbar() {
                 <a href="#" className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
               </li>
               <li>
-                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">Profil <svg className="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
+                  <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" className="flex items-center justify-between w-full py-2 pl-3 pr-4  text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:bg-[#3CC13B] hover:rounded-2xl hover:px-1 md:p-0 md:w-auto dark:text-white md:dark:hover:text-white dark:focus:text-white">Profil <svg className="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button>
                   
                   <div id="dropdownNavbar" className="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                       <ul className="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
@@ -68,6 +66,10 @@ function Navbar() {
           </div>
         </div>
       </nav>
+
+      <body>
+        <img className='' src="../src/assets/img-bg.svg" alt="" />
+      </body>
     </>
   )
 }
