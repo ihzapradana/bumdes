@@ -4,11 +4,12 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    fontFamiliy : {
+        'inter' : ['Inter'],
+        'poppins' : ['Poppins']
+      },
     extend: {
-      backgroundImage: {
-        'pemkab': "url('../src/assets/img-bg.svg')",
-        
-      }
+      
     },
   },
   plugins: [],
